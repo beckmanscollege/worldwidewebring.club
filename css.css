@@ -1,28 +1,21 @@
 body {
-font-family: 'Space Mono', arial;
+font-family: '188-100', arial;
 padding: 2.5vw;
 margin: 0;
-background-image: linear-gradient(Crimson, DarkSeaGreen, DarkSalmon, DarkOrchid);
-
-/* animation-name: bakgrund;
-animation-duration: 15s;
-animation-iteration-count: infinite; */
+background-image: linear-gradient(DarkSalmon, DarkOrchid, DarkGoldenRod, Gold);
 color: rgba(0, 0, 0, 0.8);
 font-size: 1.3vw;
 }
 
-ul {
-    list-style-type: none;
-		text-align: center;
+@font-face {
+  font-family: '188-100';
+  src: url("assets/188Sans-Pixel100.woff2") format("woff2");
 }
 
-#arton, #arton p, #arton a {color: DarkOrchid;}
-
+#arton, #arton p, #arton a {color: DarkGoldenRod;}
 #nitton, #nitton p, #nitton a {color: DarkSalmon;}
-
-#tjugo, #tjugo p, #tjugo a {color: DarkSeaGreen;}
-
-#tjugoett, #tjugoett p, #tjugoett a {color: Crimson;}
+#tjugoett, #tjugoett p, #tjugoett a {color: DarkOrchid;}
+#tjugotva, #tjugotva p, #tjugotva a {color: Gold;}
 
 
 a {
@@ -34,14 +27,24 @@ a {
 a:hover {
 	text-decoration: none;
 	color: black;
-	border-bottom: 1px solid black;
+  text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+		text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 
-.intro {column-count: 3;
+.intro {
+  column-count: 3;
 	column-gap: 2vw;
 	margin-bottom: 3vw;
 }
+
+
 
 h1 {
 	font-size: 1.4vw;
@@ -56,54 +59,41 @@ h2 {
 	font-size: 1.4vw;
 	text-align: center;
 	font-weight: normal;
-	margin: 0 0 3vw 0;
+	margin: 3vw 0 0 0;
 	padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2vw;
 }
 
-p {margin: 0; padding: 0;
+p {
+  margin: 0; padding: 0;
 }
 
-
-
-.knapp h2 {
-	font-size: 1.4vw;
-
+.intro, .lista, h1, h2, .archived {
+  font-size: 3vw;
 }
 
-
-
-
-
-
-.knapp {
-	padding: 2vw 3vw;
-	margin: 3vw 0 1vw 0;
-	border-radius: 2vw;
-	background-color: white;
-	color: rgba(200, 162, 238, 1);
-	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25);
-	width: 89vw;
-	animation-name: knappen-ut;
-	animation-duration: 0.2s;
+.intro p {
+  font-size: 1.5vw;
 }
 
-.knapp:hover {
-	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.25);
-	animation-name: knappen;
-  animation-duration: 0.2s;
-	border-radius: 0vw;
-	transform: scale(0.99);
-
+.archived {
+  color: red;
 }
+
+.lista {
+  padding-bottom: 5vw;
+}
+
 
 @keyframes knappen {
-    from {	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25); 	border-radius: 2vw;}
+    from {	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25); 	border-radius: 15vw;}
     to {	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.25); 	border-radius: 0vw;}
 }
 
 @keyframes knappen-ut {
     from {	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.25); border-radius: 0vw;}
-		to {	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25); border-radius: 2vw;}
+		to {	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25); border-radius: 15vw;}
 
 }
 
@@ -118,95 +108,29 @@ p {margin: 0; padding: 0;
 
 }
 
-.knapp h2 {
-	padding-bottom: 8px;
-	margin-bottom: 1vw;
-	font-weight: normal;
-	text-align: center;
-}
-
-.knapp p {
-	padding-bottom: 0.5vw;
-	margin-bottom: 0.5vw;
-}
 
 
-#wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding: 1vw 2.5vw;
-	margin: 0vw 0;
-	border-radius: 2vw;
-	background-color: white;
-	align-items: flex-end;
-	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25);
-	width: 90vw;
-	animation-name: knappen-ut;
-	animation-duration: 0.7s;
-}
-
-.wrappad {
-	width: 45vw;
-	text-align: left;
-	border-bottom: 1px solid DarkSalmon;
-	padding: 1vw 0;
-
-}
-
-.wrappad a, .wrappad  {
-	color: rgba(0,0,0,0.8);
-}
-
-.sss a {
-	color: DarkSalmon;
-}
-
-.sss {
-	text-align: left;
-	font-size: 1.35vw;
-	}
-
-	.wiki {
-		display: none;
-		}
-
-		.rubrik {
-			text-align: left;
-			text-transform: none;
-			font-size: 1.35vw;
-			color: rgba(0,0,0,0.8);
-
-
-			}
 
 
 
 @media only screen and (max-width: 1000px) {
 
-body, h1 {
+body  {
 	font-size: 3.4vw;
 }
 
-	.knapp p {
-		padding-bottom: 1.5vw;
-		margin-bottom: 1.5vw;
-	}
 
-	.intro {column-count: 1;
+
+
+	.intro {
+    column-count: 1;
 		column-gap: 2vw;
 	}
 
-	.wrappad {
-		width: 90vw;
-	}
+  .intro p {
+    font-size: 3vw;
+  }
 
-	.wrappad.rubrik {
-		display: none;
-	}
 
-	.sss {
-		font-size: 3.35vw;
-		}
 
 }
