@@ -88,12 +88,18 @@ p {
 .embeddad {
 	width: 96vw;
 	height: 70vh;
-	
+	border-radius: 10px;
 }
 
 .embeddad-ruta {
 	margin-bottom: 2vw;
 	border-radius: 10px;
+	transform: scale(0.9);	
+}
+
+
+.embeddad-ruta:hover {
+	transform: scale(1);	
 }
 
 
