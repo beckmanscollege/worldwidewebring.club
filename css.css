@@ -1,6 +1,6 @@
 body {
 font-family: '188-100', arial;
-padding: 2.5vw;
+padding: 2vw;
 margin: 0;
 background-image: linear-gradient(DarkSalmon, DarkOrchid, DarkGoldenRod, Gold);
 color: rgba(0, 0, 0, 0.8);
@@ -86,8 +86,8 @@ p {
 }
 
 .embeddad {
-	width: 80vw;
-	height: 50vh;
+	width: 96vw;
+	height: 70vh;
 	
 }
 
